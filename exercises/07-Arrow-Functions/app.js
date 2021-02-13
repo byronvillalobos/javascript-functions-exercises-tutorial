@@ -16,11 +16,23 @@
 // }
 
 
-   // From this line up Do not change code below
-   let str = "John";
+//    // SEGUNDO CODIGO
+//    let str = "John";
 
-const rapid  = (str) => {
-     let resultado = str.replace(/[aáAÁeéEÉiíIÍoOóÓuúUÚ]/g, '')
-    return resultado.toUpperCase();
+// const rapid  = (str) => {
+//      let resultado = str.replace(/[aáAÁeéEÉiíIÍoOóÓuúUÚ]/g, '')
+//     return resultado.toUpperCase();
+// }
+//    console.log(rapid(str));
+
+
+// TERCER CODIGO
+
+
+rapid = (validateText) => {
+    return validateText.replace(/[aáAÁeéEÉiíIÍoOóÓuúUÚ]/g, '').toUpperCase();
 }
-   console.log(rapid(str));
+
+// From this line up Do not change code below
+let str = "Otorrinoringología";
+console.log(rapid(str));
